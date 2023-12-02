@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,16 +6,16 @@
         canvas {
             display: block;
             background: #000;
-            width: 100vw;
-            height: 100vh;
-            margin: 0;
+            width: 99vw;
+            height: 95vh;
+            margin: 20;
         }
         #scoreBoard {
             position: absolute;
             top: 10px;
             left: 10px;
-            color: white;
-            font-family: Arial, sans-serif;
+            color: orange;
+            font-family: cursive;
         }
     </style>
 </head>
@@ -34,8 +33,8 @@
 
         let playerPosition = { x: canvas.width / 3, y: canvas.height / 2 };
         let obstacles = [];
-        const minimumWindStrength = 1;
-        const maximumWindStrength = 5;
+        const minimumWindStrength = 2;
+        const maximumWindStrength = 6;
         let windStrength = minimumWindStrength;
         let score = 0;
         let highScore = localStorage.getItem('highScore') ? parseInt(localStorage.getItem('highScore')) : 0;
